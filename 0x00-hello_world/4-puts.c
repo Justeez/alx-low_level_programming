@@ -1,5 +1,3 @@
-#!/bin/bash
-
 #include <studio.h>
 
 int main(void)
@@ -9,7 +7,7 @@ int main(void)
 	    
 
 	  
-	 char str[20] = "Programming is like building a multilingual puzzle";
+	 char str[100] = "Programming is like building a multilingual puzzle";
 
 		    
 
