@@ -2,10 +2,10 @@
 /**
  * main - entry point
  *
- * return: Always returns 0
+ * Return: Always returns 0
  *
  */
-int main()
+int main(void)
 {
 	int i;
 	int j;
@@ -33,5 +33,5 @@ int main()
 	}
 	putchar('\n');
 
-	return (0);
+	return 0;
 }
