@@ -2,13 +2,12 @@
 
 /**
  * main - print alphabet reversed using putchar
- * return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-
-	char alpha = 'z';
+ char alpha = 'z';
 
 	while (alpha >= 'a')
 	{
