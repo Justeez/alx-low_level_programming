@@ -2,10 +2,10 @@
 /**
  * main - entry point
  *
- * return: Always returns 0
+ * Return: always returns 0
  *
  */
-int main()
+int main(void)
 {
 	int i;
 	int j;
@@ -14,7 +14,7 @@ int main()
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
-		{
+	 	{	
 			for (k = 0; k <= 9; k++)
 			{
 				if (k > j && j > i)
@@ -35,3 +35,4 @@ int main()
 
 	return (0);
 }
+
