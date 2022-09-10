@@ -2,32 +2,31 @@
 /**
  * main - entry point
  *
- * Return: always returns 0
+ * Return: Always returns 0
  *
  */
 int main(void)
 {
 	int i;
 	int j;
-	int k;
 
-	for (i = 0; i <= 9; i++)
+	for (i = 0; i <= 99; i++)
 	{
-		for (j = 0; j <= 9; j++)
-	 	{	
-			for (k = 0; k <= 9; k++)
+		for (j = i + 1; j <= 99; j++)
+	 	{
+
+			putchar(i / 10 + '0');
+			putchar(i % 10 + '0');
+			putchar(' ');
+			putchar(j / 10 + '0');
+			putchar(j % 10 + '0');
+
+			if (!(i == 98 && j == 99))
 			{
-				if (k > j && j > i)
-				{
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(k + '0');
-					if (i != 7 || j != 8 || k != 9)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+				putchar(',');
+				putchar(' ');
+
+
 			}
 		}
 	}
