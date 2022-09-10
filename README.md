@@ -1,1 +1,1 @@
-C Language readme
+print alphabet in uppper case
