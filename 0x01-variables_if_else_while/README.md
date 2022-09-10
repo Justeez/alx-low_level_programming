@@ -1,1 +1,1 @@
-assign number to variable n
+prints alphabet in lower case
