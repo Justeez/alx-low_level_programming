@@ -14,7 +14,7 @@ char *leet(char *s)
 	int n[] = {52, 51, 48, 55, 49};
 
 	while (s[k] != '\0')
-	{	
+	{
 		for (j = 0; j < 5; j++)
 		{
 			if (s[k] == sl[j] || s[k] == ul[j])
