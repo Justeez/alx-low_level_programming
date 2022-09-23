@@ -1,1 +1,1 @@
-print alphabet in uppper case
+More functions nested loops task
