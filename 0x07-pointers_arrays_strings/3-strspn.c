@@ -15,10 +15,10 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (*(s + j) != '\0')
 	{
-		j = 0;
+		k = 0;
 		flag = 1;
 
-		while (*(accept + j) != '\0')
+		while (*(accept + k) != '\0')
 		{
 			if (*(s + j) == *(accept + k))
 			{
