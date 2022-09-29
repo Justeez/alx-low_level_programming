@@ -1,59 +1,19 @@
 #include "main.h"
 
 /**
- ** length - helps do it
- ** @s: string
- ** Return: string length
+ * _pow_recursion - It returns the value of x raised to the power y.
+ * @x: the base
+ * @y: the exponent
+ * Return: The result of x raised y
  */
 
-int length(char *s)
+int _pow_recursion(int x, int y)
 {
-	int i = 0;
-
-	if (*s)
-	{
-		i = i + length(s + 1);
-		return (i += 1);
-	}
-	return (0);
-}
-
-/**
- ** helper2 - helps more
- ** @i: integer i
- ** @s: string
- ** Return: int value
- */
-
-
-
-int helper2(int i, char *s)
-{
-	if (*s)
-	{
-		if (*s != s[length(s) - i])
-		{
-			return (0);
-		}
-		else
-		{
-			return (helper2(i + 1, s + 1));
-		}
-	}
-	return (1);
-}
-
-
-/**
- ** is_palindrome - is it paldindrome
- ** @s: string to check
- ** Return: boolean
- **/
-
-
-int is_palindrome(char *s)
-{
-	int i = 1;
-
-	return (helper2(i, s));
+	if (y == 0)
+		return (1);
+	else if (y < 0)
+		return (-1);
+	else if (y == 1)
+		return (x);
+	return (x *= _pow_recursion(x, y - 1));
 }
