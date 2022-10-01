@@ -1,4 +1,4 @@
-nclude <stdio.h>
+#include <stdio.h>
 
 #include <stdlib.h>
 
@@ -53,6 +53,5 @@ int main(void)
 	}
 
 	printf("%s", password);
-
 	return (0);
 }
